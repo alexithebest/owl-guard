@@ -1,0 +1,86 @@
+/**
+ * @name Vanta Guard Purple
+ * @description Acento roxo + selo "VANTA GUARD PROTECTING YOU!" no canto
+ * @author vanta
+ * @version 1.0.0
+ */
+
+/* acento roxo em toda a interface */
+:root,
+.theme-dark,
+.theme-darker,
+.theme-midnight {
+    --brand-experiment: #7c3aed !important;
+    --brand-experiment-100: #ede9fe !important;
+    --brand-experiment-130: #ddd6fe !important;
+    --brand-experiment-160: #c4b5fd !important;
+    --brand-experiment-200: #a78bfa !important;
+    --brand-experiment-230: #9d7bf8 !important;
+    --brand-experiment-260: #8b5cf6 !important;
+    --brand-experiment-300: #8b5cf6 !important;
+    --brand-experiment-330: #7c3aed !important;
+    --brand-experiment-360: #7c3aed !important;
+    --brand-experiment-400: #7c3aed !important;
+    --brand-experiment-430: #6d28d9 !important;
+    --brand-experiment-460: #6d28d9 !important;
+    --brand-experiment-500: #6d28d9 !important;
+    --brand-experiment-530: #6d28d9 !important;
+    --brand-experiment-560: #5b21b6 !important;
+    --brand-experiment-600: #5b21b6 !important;
+    --brand-experiment-630: #4c1d95 !important;
+    --brand-experiment-660: #4c1d95 !important;
+    --brand-experiment-700: #3b0f7a !important;
+
+    --brand-500: #7c3aed !important;
+    --brand-560: #6d28d9 !important;
+    --brand-360: #8b5cf6 !important;
+    --brand-260: #a78bfa !important;
+
+    --text-link: #c4b5fd !important;
+    --interactive-active: #ffffff !important;
+    --focus-primary: #8b5cf6 !important;
+    --control-brand-foreground: #a78bfa !important;
+}
+
+/* brilho roxo nos contornos de foco */
+:root {
+    --focus-primary: #a78bfa !important;
+    --input-focused-border: #8b5cf6 !important;
+}
+
+/* selo no canto superior direito */
+#app-mount::after {
+    content: "VANTA GUARD PROTECTING YOU!";
+    position: fixed;
+    top: 12px;
+    right: 18px;
+    z-index: 2147483647;
+    pointer-events: none;
+    padding: 8px 15px 8px 27px;
+    border-radius: 999px;
+    background:
+        radial-gradient(circle at 15px 50%, #86efac 0 3px, transparent 3.5px),
+        linear-gradient(135deg, rgba(124, 58, 237, 0.96), rgba(168, 85, 247, 0.96));
+    color: #ffffff;
+    font-family: "gg sans", "Segoe UI", system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    box-shadow:
+        0 8px 28px rgba(124, 58, 237, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6px);
+}
+
+/* moldura roxa sutil na janela */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 2147483646;
+    pointer-events: none;
+    box-shadow:
+        inset 0 0 0 1px rgba(139, 92, 246, 0.55),
+        inset 0 0 34px rgba(124, 58, 237, 0.18);
+}
